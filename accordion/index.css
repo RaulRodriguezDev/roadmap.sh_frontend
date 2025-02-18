@@ -32,6 +32,14 @@ body {
 main {
     margin-top: 1em;
 }
+
+section {
+    margin: 1em 0;
+}
+.inverted {
+    transform: rotate(180deg);
+}
+
 .accordion-header {
     display: flex;
     justify-content: space-between;
@@ -42,6 +50,10 @@ main {
     border-radius: 1em;
 }
 
+.accordion-header span:hover {
+    cursor: pointer;
+}
+
 .accordion-content {
     border: 2px solid var(--minsk-950);
     border-radius: 1em;
@@ -49,4 +61,31 @@ main {
     padding: 1em;
     margin: 1em 0;
     color: var(--minsk-800);
+    width: 100%;
+    transform: scaleY(0);
+    transform-origin: center top;
+    display: none;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeOut {
+
+    99% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        display: inline-block;
+    }
+
+    to {
+        transform: scaleY(1);
+        display: inline-block;
+    }
 }

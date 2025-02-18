@@ -29,6 +29,9 @@ body {
     margin-top: 10px;
 }
 
+main {
+    margin-top: 1em;
+}
 .accordion-header {
     display: flex;
     justify-content: space-between;
@@ -37,4 +40,13 @@ body {
     color: var(--minsk-50);
     padding: 1em;
     border-radius: 1em;
+}
+
+.accordion-content {
+    border: 2px solid var(--minsk-950);
+    border-radius: 1em;
+    background-color: var(--minsk-100);
+    padding: 1em;
+    margin: 1em 0;
+    color: var(--minsk-800);
 }

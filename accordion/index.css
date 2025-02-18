@@ -1,5 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Atkinson Hyperlegible Next', sans-serif;
+}
+
+:root {
+    --minsk-50: #eeeeff;
+    --minsk-100: #e0e0ff;
+    --minsk-200: #c7c6ff;
+    --minsk-300: #aaa4fd;
+    --minsk-400: #9180f9;
+    --minsk-500: #8062f2;
+    --minsk-600: #7345e6;
+    --minsk-700: #6437cb;
+    --minsk-800: #512fa4;
+    --minsk-900: #452e84;
+    --minsk-950: #291b4b;
+}
+body {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid ;
+    border-radius: 15px;
+    padding: 5em 10em;
+    margin-top: 10px;
 }

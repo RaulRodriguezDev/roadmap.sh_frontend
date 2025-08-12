@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Atkinson Hyperlegible Next', sans-serif;
+}
+
+:root {
+    --minsk-50: #eeeeff;
+    --minsk-100: #e0e0ff;
+    --minsk-200: #c7c6ff;
+    --minsk-300: #aaa4fd;
+    --minsk-400: #9180f9;
+    --minsk-500: #8062f2;
+    --minsk-600: #7345e6;
+    --minsk-700: #6437cb;
+    --minsk-800: #512fa4;
+    --minsk-900: #452e84;
+    --minsk-950: #291b4b;
+}
+body {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid var(--minsk-950);
+    border-radius: 15px;
+    padding: 5em 10em;
+    margin-top: 10px;
+}
+
+main {
+    margin-top: 1em;
+}
+
+section {
+    margin: 1em 0;
+}
+.inverted {
+    transform: rotate(180deg);
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--minsk-950);
+    color: var(--minsk-50);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.accordion-header span:hover {
+    cursor: pointer;
+}
+
+.accordion-content {
+    border: 2px solid var(--minsk-950);
+    border-radius: 1em;
+    background-color: var(--minsk-100);
+    padding: 1em;
+    margin: 1em 0;
+    color: var(--minsk-800);
+    width: 100%;
+    transform: scaleY(0);
+    transform-origin: center top;
+    display: none;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeOut {
+
+    99% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        display: inline-block;
+    }
+
+    to {
+        transform: scaleY(1);
+        display: inline-block;
+    }
+}
